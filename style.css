@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+
+}
+
+.intro {
+
+    display: flex;
+    gap: 7em;
+    background-color:#EDDBC7;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 17em;
+
+}
+
+.intro-para {
+    padding-top: 0.6em;
+    max-width: 700px;
+    font-size: 1.7em;
+    transition: font-size, 2.5s ease-in ;
+
+}
+q::before {
+    color: red;
+    font-size: 5em;
+}
+
+q::after {
+    color: red;
+    font-size: 5em;
+    position: absolute;
+}
+.intro-image {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    max-width: 100%;
+}
+.container2{
+    min-height: 100vh;
+
+}
+
+.container2 h3{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+.biblography{
+    display:flex ;
+            font-size: 1.4em;
+
+}
+li{
+    margin: 2em;
+}
+
+ul li::marker{
+    content: ' *';
+    font-size: 1.2em;
+    color: brown;
+    white-space: pre;
+}
+
+.biblo-left{
+    width: 50%;
+}
+
+.biblo-right{
+    width: 50%;
+}
+
+.legacy{
+    min-height: 100vh;
+    background-color:#EDDBC7;
+    display:flex ;
+    flex-direction: column;
+    text-align: center;
+}
+
+.legacy-img{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 2%;
+}
+
+@media only screen and (max-width: 700px) {
+    .intro {
+     display: block;
+     overflow:none;
+     width: 100%;
+     font-size: 0.7em;
+     padding: 1em;
+
+    }
+
+    .intro-image{
+       padding-left: 2.7em;
+    }
+  }
