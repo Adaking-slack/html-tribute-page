@@ -6,6 +6,7 @@
 main {
     width: 100%;
     overflow: hidden;
+    font-family: 'Rubik', sans-serif;
 
 }
 
@@ -91,6 +92,7 @@ ul li::marker{
     flex-direction: column;
     text-align: center;
     width: 100%;
+    font-size: 1em;
 
 }
 
@@ -130,6 +132,7 @@ ul li::marker{
 
     .facts{
         display:block ;
+        text-align: center;
       
     
     }
