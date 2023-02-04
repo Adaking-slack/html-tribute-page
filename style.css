@@ -54,11 +54,13 @@ q::after {
 .container2 h3{
     text-align: center;
     font-weight: bold;
-    padding-top: 2em;
-    padding-bottom: 2em;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   text-transform: uppercase;
+    
 
 }
-.biblography{
+.facts{
     display:flex ;
     font-size: 1.4em;
 
@@ -74,11 +76,11 @@ ul li::marker{
     white-space: pre;
 }
 
-.biblo-left{
+.facts-left{
     width: 50%;
 }
 
-.biblo-right{
+.facts-right{
     width: 50%;
 }
 
@@ -126,12 +128,12 @@ ul li::marker{
     
     }
 
-    .biblography{
+    .facts{
         display:block ;
       
     
     }
-    .biblography ul li{
+    .facts ul li{
         width: 300px;
         text-align: center;
     }
@@ -139,6 +141,5 @@ ul li::marker{
         display: none;
     }
 
-    .legacy{
-    }
+
   }
