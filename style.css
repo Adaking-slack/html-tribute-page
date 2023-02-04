@@ -5,6 +5,7 @@
 
 main {
     width: 100%;
+    overflow: hidden;
 
 }
 
@@ -14,14 +15,15 @@ main {
     gap: 7em;
     background-color:#EDDBC7;
     justify-content: center;
+
     width: 100%;
     height: 100vh;
-    padding-top: 17em;
+    padding-top: 15em;
 
 }
 
 .intro-para {
-    padding-top: 0.6em;
+    padding-top: 3em;
     max-width: 700px;
     font-size: 1.7em;
     transition: font-size, 2.5s ease-in ;
@@ -29,21 +31,22 @@ main {
 }
 q::before {
     color: red;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 q::after {
     color: red;
-    font-size: 5em;
+    font-size: 3.5em;
     position: absolute;
 }
 .intro-image {
     border-radius: 50%;
     height: 350px;
     width: 350px;
-    max-width: 100%;
+    max-width: 60%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-.container2{
+    .container2{
     min-height: 100vh;
 
 }
@@ -57,7 +60,7 @@ q::after {
 }
 .biblography{
     display:flex ;
-            font-size: 1.4em;
+    font-size: 1.4em;
 
 }
 li{
@@ -66,7 +69,7 @@ li{
 
 ul li::marker{
     content: ' *';
-    font-size: 1.2em;
+    font-size: 1em;
     color: brown;
     white-space: pre;
 }
@@ -85,6 +88,8 @@ ul li::marker{
     display:flex ;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+
 }
 
 .legacy-img{
@@ -99,14 +104,41 @@ ul li::marker{
 @media only screen and (max-width: 700px) {
     .intro {
      display: block;
-     overflow:none;
-     width: 100%;
+    text-align: center;
      font-size: 0.7em;
      padding: 1em;
-
+     padding-top: 12em;
     }
 
     .intro-image{
-       padding-left: 2.7em;
+       
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+    }
+
+    .intro-para {
+        padding-top: 0.6em;
+        text-align: center;
+       max-width: 95%;
+        font-size: 1.3em;
+        transition: font-size, 2.5s ease-in ;
+    
+    }
+
+    .biblography{
+        display:block ;
+      
+    
+    }
+    .biblography ul li{
+        width: 300px;
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+
+    .legacy{
     }
   }
